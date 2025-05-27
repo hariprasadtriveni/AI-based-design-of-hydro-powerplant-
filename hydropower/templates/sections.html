@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydro Power Plant - Sections</title>
+    <link rel="stylesheet" href="/static/hydropower/section.css">
+</head>
+<body>
+    <header>
+        <h1>AI-Based Hydro Power Plant Design</h1>
+    </header>
+
+    <main>
+        <h2>Select a Section</h2>
+        <div class="sections-container">
+            <a href="{% url 'civil_structure' %}" class="section-box">Civil Structure</a>
+            <a href="{% url 'hydroelectric_system' %}" class="section-box">Hydroelectric System</a>
+            <a href="{% url 'mechanical_components' %}" class="section-box">Mechanical Components</a>
+        </div>
+    </main>
+</body>
+</html>

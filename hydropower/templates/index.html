@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydro Power Plant - Input</title>
+    <link rel="stylesheet" href="/static/hydropower/index.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>AI-Based Hydro Power Plant Design</h1>
+        <h2>Enter Project Details</h2>
+        <form method="post" action="{% url 'generate_design' %}">
+            {% csrf_token %}
+            <input type="text" name="location" placeholder="Location" required>
+            <input type="number" name="river_flow" placeholder="River Flow (m³/s)" required>
+            <input type="number" name="budget" placeholder="Budget ($ Million)" required>
+            <input type="number" name="power_requirement" placeholder="Power Requirement (MW)" required>
+            <button type="submit" class="submit">Proceed to Sections</button>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+/* Ensure the container properly holds the image */
+.container {
+    max-width: 90%; /* Make it responsive */
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Fix AI-Generated Image Display */
+.ai-image {
+    max-width: 100%; /* Ensures the image fits within the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for aesthetics */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+    object-fit: contain; /* Ensures full image is visible */
+    display: block; /* Removes unwanted extra spacing */
+    margin: 20px auto; /* Centers the image */
+}

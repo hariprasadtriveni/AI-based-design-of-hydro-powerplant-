@@ -1,0 +1,63 @@
+/* General Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(135deg, #d0d5dd, #88a0d8);
+    /*background-color: #004080;*/
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    margin: 100px auto; /* Increased margin for more spacing */
+    max-width: 80%;
+}
+
+/* Section Heading */
+h2 {
+    font-size: 22px;
+    margin-top: 100px; /* Moves "Select a Section" downward */
+    margin-bottom: 50px;
+    color: #333;
+}
+
+/* Container for Sections */
+.sections-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 80px; /* Moves the three boxes further down */
+}
+
+/* Section Boxes */
+.section-box {
+    width: 250px;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #004080;
+    border: 2px solid #004080;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.section-box:hover {
+    background-color: #004080;
+    color: white;
+    transform: scale(1.05);
+}
